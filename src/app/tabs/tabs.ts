@@ -5,6 +5,11 @@ import { Component } from '@angular/core';
   standalone: true,
   templateUrl: './tabs.html',
 })
-export class Tabs {
 
+export class Tabs {
+  activeTab = "Weight";
+
+  changeTab(newTab: string): void {
+    this.activeTab = newTab;
+  }
 }
